@@ -6,6 +6,8 @@ import Features from './components/Features';
 import About from './components/About';
 import Footer from './components/Footer';
 
+import Gallery from './components/Gallery';
+
 function App() {
   const [isSidebarOpen, setIsSidebarOpen] = useState(false);
 
@@ -47,6 +49,7 @@ function App() {
       <Sidebar isOpen={isSidebarOpen} toggleSidebar={toggleSidebar} />
       <main>
         <Hero />
+        <Gallery />
         <Features />
         <About />
       </main>

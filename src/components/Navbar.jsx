@@ -45,21 +45,46 @@ const Navbar = ({ toggleSidebar }) => {
     };
 
     return (
-        <nav class="navbar" style={navbarStyle}>
-            <div class="container nav-container">
-                <div class="brand">
-                    <a href="#" id="logo" class="logo-text" onClick={handleLogoClick}>{logoText}</a>
+        <nav className="navbar" style={navbarStyle}>
+            <div className="container nav-container">
+                <div className="brand">
+                    <a href="#" id="logo" className="logo-text" onClick={handleLogoClick} style={{ display: 'flex', alignItems: 'center', gap: '8px' }}>
+                        <img
+                            src="https://t4.ftcdn.net/jpg/05/54/85/47/360_F_554854785_51cLgZpLQixPvUt3qRvMtvYoEDOCGev5.jpg"
+                            alt="NexGen Logo"
+                            style={{ width: '32px', height: '32px', borderRadius: '50%', objectFit: 'cover' }}
+                        />
+                        {logoText}
+                    </a>
                 </div>
 
-                <ul class="nav-links desktop-only">
+                <ul className="nav-links desktop-only">
                     <li><a href="#home">Home</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
                     <li><a href="#products">Products</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
 
-                <div class="nav-actions desktop-only">
-                    <a href="#" class="btn btn-primary">Get Started</a>
+                <div className="nav-actions desktop-only" style={{ display: 'flex', alignItems: 'center', gap: '20px' }}>
+                    <div className="user-stack" style={{ display: 'flex', alignItems: 'center', marginLeft: '10px' }}>
+                        {[1, 2, 3, 4, 5].map((i) => (
+                            <img
+                                key={i}
+                                src={`https://picsum.photos/seed/nav-${i}/40/40`}
+                                alt={`User ${i}`}
+                                style={{
+                                    width: '30px',
+                                    height: '30px',
+                                    borderRadius: '50%',
+                                    border: '2px solid var(--bg-color)',
+                                    marginLeft: i === 1 ? '0' : '-10px',
+                                    objectFit: 'cover'
+                                }}
+                            />
+                        ))}
+                    </div>
+                    <a href="#" className="btn btn-primary">Get Started</a>
                 </div>
 
                 <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" onClick={toggleSidebar}>
