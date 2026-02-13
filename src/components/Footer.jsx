@@ -6,7 +6,7 @@ const Footer = () => {
             <div className="container footer-motivation reveal-on-scroll">
                 <div className="motivation-content">
                     <img
-                        src="/motivational_posters.png"
+                        src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&q=80&w=1000"
                         alt="Motivational Posters"
                         className="motivation-img"
                     />
@@ -55,6 +55,32 @@ const Footer = () => {
                         <li><a href="#">Privacy</a></li>
                         <li><a href="#">Terms</a></li>
                     </ul>
+                </div>
+            </div>
+
+            {/* Featured Assets Section */}
+            <div className="container footer-assets reveal-on-scroll">
+                <div className="assets-grid">
+                    <div className="asset-card">
+                        <img
+                            src="https://www.shutterstock.com/shutterstock/photos/2016233150/display_1500/stock-vector-modern-abstract-digital-alphabet-font--technology-typography-creative-urban-sport-fashion-2016233150.jpg"
+                            alt="Typography Asset"
+                        />
+                        <div className="asset-info">
+                            <h4>Digital Typography</h4>
+                            <p>Modern abstract font designs.</p>
+                        </div>
+                    </div>
+                    <div className="asset-card">
+                        <img
+                            src="https://t3.ftcdn.net/jpg/02/69/82/76/360_F_269827623_3BuO9pyLBluaRnqd1T0Sh02ZkEjZpbqj.jpg"
+                            alt="Futuristic Tech Asset"
+                        />
+                        <div className="asset-info">
+                            <h4>Futuristic Tech</h4>
+                            <p>Premium abstract patterns.</p>
+                        </div>
+                    </div>
                 </div>
             </div>
 
