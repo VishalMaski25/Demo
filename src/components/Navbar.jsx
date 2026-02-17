@@ -59,9 +59,9 @@ const Navbar = ({ toggleSidebar }) => {
                 </div>
 
                 <ul className="nav-links desktop-only">
-                    <li><a href="#home">Home</a></li>
-                    <li><a href="#gallery">Gallery</a></li>
-                    <li><a href="#products">Products</a></li>
+                    <li><a href="#home">Hacked</a></li>
+                    <li><a href="#gallery">Welcome to our playground</a></li>
+                    <li><a href="#products">MONU</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
@@ -84,7 +84,7 @@ const Navbar = ({ toggleSidebar }) => {
                             />
                         ))}
                     </div>
-                    <a href="#" className="btn btn-primary">Get Started</a>
+                    <a href="#" className="btn btn-primary">OK OK </a>
                 </div>
 
                 <button class="menu-toggle" id="menu-toggle" aria-label="Toggle Menu" onClick={toggleSidebar}>
